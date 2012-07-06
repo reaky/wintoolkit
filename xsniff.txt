@@ -1,0 +1,26 @@
+X系列工具之X-Sniffer
+使用说明
+一、系统要求：Windows 2000
+二、功能简介：
+  简易的命令行方式嗅探器，可捕获局域网内FTP/SMTP/POP3/HTTP协议密码。
+三、所需文件：
+  xsniff.exe - X-Sniffer主程序；
+四、运行参数说明：
+  xsniff <选项>
+  <选项>含义如下:
+    -tcp           : 输出TCP数据报
+    -udp           : 输出UDP数据报
+    -icmp          : 输出ICMP数据报
+    -pass          : 过滤密码信息
+    -hide          : 后台运行
+    -host          : 解析主机名
+    -addr <IP地址> : 过滤IP地址
+    -port <端口>   : 过滤端口
+    -log <文件名>  : 将输出保存到文件
+    -asc           : 以ASCII形式输出
+    -hex           : 以16进制形式输出
+  示例：xsiff.exe -pass -hide -log pass.log
+        xsiff.exe -tcp -udp -asc -addr 192.168.1.1
+______________________________________________________________
+问题、建议或发现错误请发邮件至：glacier@xfocus.org
+版权所有：安全焦点(http://www.xfocus.org)
